@@ -1,0 +1,27 @@
+#include <cs50.h>
+#include <stdio.h>
+// declare integer 
+// nested for loop
+// do while loop if in the range
+int main(void)
+{
+    int n;
+    do 
+    {
+     n = get_int("Height: ");
+     } while(n < 0 || n > 23);
+//     two nested for loops nested in another for loop(i). “I” controls iterations per line. then the next controls hashes, and then lastlycontrols spaces
+//     i = row n = height
+    for(int i = 0; i < n; i++)
+        {
+ 
+        for(int j = 0; j < n ; j++)
+        {
+            if(i + j >= n - 1)
+    printf("#");
+           else
+    printf(" ");
+}
+        printf("\n");
+}
+}
