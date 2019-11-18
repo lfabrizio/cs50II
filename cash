@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <cs50.h>
 #include <stdio.h>
 #include <math.h> // needed for greedy algorithm and used for rounding functions
@@ -57,3 +58,64 @@ float get_positive_float(string prompt)
     while (n <= 0);
     return n;
 }
+=======
+#include <cs50.h>
+#include <stdio.h>
+#include <math.h> // needed for greedy algorithm and used for rounding functions
+
+
+// get remainder %
+// positive int only
+// float = fractional value
+float get_positive_float(string prompt);
+
+int main(void)
+{
+    // promt user for monetary amount
+    float change = get_positive_float("Change owed: $"); // user types in input amount
+    
+    int newchange = round(change * 100); // converted to whole number
+    
+    int count = 0; // variable to store 
+    
+    // greater then > 25 cents  divide it by 25, store to variable newchange.
+    while (newchange >= 25) // increase count then decrease amount by denom
+    {
+        count += (newchange / 25);
+        newchange %= 25;
+    } // repeat til no longer able to use quarters then proceed to dimes
+    // 10 cents or more, divided and stored,remainder in newchange.
+    while (newchange >= 10 && newchange < 25)
+    {
+        count += (newchange / 10);
+        newchange %= 10;
+    }
+    // do same for  5 cents, divide and store 
+    while (newchange >= 5 && newchange < 10)
+    {
+        count += (newchange / 5);
+        newchange %= 5;
+    }
+    // penny
+    while (newchange >= 1 && newchange < 5)
+    {
+        count += (newchange / 1);
+        newchange %= 1;
+    }
+    //output the number of least amount of coins
+    printf("%i\n", count);
+    
+}
+
+float get_positive_float(string prompt)
+{
+    float n;
+    do
+    {
+        n = get_float("%s", prompt);
+    }
+    // reprompt user
+    while (n <= 0);
+    return n;
+}
+>>>>>>> c43510c5e275ffb8643a39c9a9d860aa9560428b
