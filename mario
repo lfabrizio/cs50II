@@ -10,7 +10,7 @@ int main(void)
     {
        n = get_int("Height: ");
      } 
-    while(n < 0 || n > 23);
+    while(n < 0 || n > 8);
 //     two nested for loops nested in another for loop(i). “I” controls iterations per line. then the next controls hashes, and then lastlycontrols spaces
 //     i = row n = height
     for (int i = 0; i < n; i++)
@@ -26,4 +26,5 @@ int main(void)
         printf("\n");
     }
 }
+
 
