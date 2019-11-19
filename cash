@@ -1,10 +1,9 @@
-<<<<<<< HEAD
 #include <cs50.h>
 #include <stdio.h>
 #include <math.h> // needed for greedy algorithm and used for rounding functions
 
 
-// get remainder %
+// get remainder w modulo %
 // positive int only
 // float = fractional value
 float get_positive_float(string prompt);
@@ -118,4 +117,4 @@ float get_positive_float(string prompt)
     while (n <= 0);
     return n;
 }
->>>>>>> c43510c5e275ffb8643a39c9a9d860aa9560428b
+
