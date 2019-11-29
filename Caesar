@@ -1,4 +1,5 @@
 // caesar challenge
+// check if refactoring is possible 
 #include <cs50.h>
 #include <stdio.h>
 #include <stdlib.h> // to use atoi function
