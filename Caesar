@@ -1,10 +1,9 @@
-// caesar challenge
-// check if refactoring is possible 
+
 #include <cs50.h>
 #include <stdio.h>
-#include <stdlib.h> // to use atoi function
+#include <stdlib.h> // to use ATOI function
 #include <string.h>
-#include <ctype.h> // to use toupper and tolower
+#include <ctype.h> // to use toupper and tolower methods
 
 // to turn plain text into cipher text, familiarity with ASCII chart
 // first argument/parameters entered is defining how many strings are in the array of argv. 
