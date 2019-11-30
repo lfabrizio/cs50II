@@ -29,33 +29,32 @@ int main(int argc, string argv[])
     {
 // string plain text and print
 // ask for the specific word to encrypt from the user
-       string plainText = get_string("plaintext: ");
-       printf("ciphertext: ");
+        string plainText = get_string("plaintext: ");
+        printf("ciphertext: ");
 // each individual character of the string strnlen- string length
-   for (int i = 0, n = strlen(plainText); i < n; i++)
-   {
+        for (int i = 0, n = strlen(plainText); i < n; i++)
+        {
 // next preserve upper and lowercase as long as alphabetical 
 // check for lowercase
-    if
-     islower(plainText[i])
-     {
-        printf("%c", (((plainText[i] + k) - 97) % 26) + 97);
-     }
+            if
+            islower(plainText[i])
+            {
+               printf("%c", (((plainText[i] + k) - 97) % 26) + 97);
+            }
 //check for uppercase
-          else if
+            else if
             isupper(plainText[i])
-        {
-        printf("%c", (((plainText[i] + k) - 65) % 26) + 65);
-        }
-      
-      else
-      {
-        printf("%c", plainText[i]);
-      }
-    }
+            {
+              printf("%c", (((plainText[i] + k) - 65) % 26) + 65);
+            }
+            else
+            {
+             printf("%c", plainText[i]);
+            }
+         }
+       printf("\n");
 
-    printf("\n");
-
-    return 0;
+        return 0;
     }
 }
+
