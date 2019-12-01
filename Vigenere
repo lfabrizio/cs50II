@@ -10,7 +10,7 @@
 #include <cs50.h> //cs50 library
 #include <stdlib.h>
 
-bool validate_key(string key); // to use for line 59 
+bool validate_key(string key); // declare here to use for isalpha later
 
 int main(int argc, string argv[])
 {    // must meet conditions right away or re-prompt
