@@ -28,7 +28,7 @@ int main(int argc, string argv[])
     }
     while (plaintext == NULL);
     
-    //Iterate through plaintext to generate the cipher
+    //Iterate through plaintext to generate the cipher and check upper/lower respectfully
     printf("ciphertext: ");
 
     for (int i = 0, k = 0, len = strlen(plaintext), lenk = strlen(key); i < len; i++)
@@ -59,7 +59,7 @@ bool validate_key(string key)
 // if at any point the character is not an alphabet chr then end  
     for (int i = 0, len = strlen(key); i < len; i++)
     { 
-        // if the input is not an "isalpha" print out ..
+        // if the input is not an "isalpha" alphabetical then return false
         if (!(isalpha(key[i])))
         {
             return false;  
