@@ -8,7 +8,7 @@
 #include <cs50.h> //cs50 library
 #include <stdlib.h>
 
-bool validate_key(string key); // declare here to use for isalpha later
+bool validate_key(string key); // declared
 
 int main(int argc, string argv[])
 {    // must meet conditions right away or re-prompt
@@ -28,9 +28,8 @@ int main(int argc, string argv[])
     }
     while (plaintext == NULL);
     
-    //Iterate through plaintext to generate the cipher and check upper/lower respectfully
     printf("ciphertext: ");
-
+   //Iterate through plaintext to generate the cipher and check upper/lower respectfully
     for (int i = 0, k = 0, len = strlen(plaintext), lenk = strlen(key); i < len; i++)
     {
         if (isupper(plaintext[i])) // range of A - Z + key % 26
