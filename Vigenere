@@ -1,7 +1,7 @@
 // c = cipher,  k = key, p = sentence or text/word to encrypt, n = number of letters in alphabet
 //mod length of k(key)
 //intletter + int keyletter mod by 26  ==> return a ciphered letter as a number
-// take that value ==> char cipher value = some encrypted letter
+
 #include <stdio.h> //fgets() and printf
 #include <string.h> //strlen()
 #include <ctype.h> // such as isupper and islower
