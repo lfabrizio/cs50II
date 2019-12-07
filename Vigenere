@@ -1,3 +1,4 @@
+//check 50 revisions needed to clean 
 // c = cipher,  k = key, p = sentence or text/word to encrypt, n = number of letters in alphabet
 //mod length of k(key)
 //intletter + int keyletter mod by 26  ==> return a ciphered letter as a number
